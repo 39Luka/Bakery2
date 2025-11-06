@@ -1,4 +1,5 @@
 :root {
+  /* ===== Colores ===== */
   --color-black-1: rgba(0, 0, 0, 1);
   --color-black-2: rgba(29, 29, 29, 1);
   --color-black-3: rgba(40, 40, 40, 1);
@@ -11,93 +12,157 @@
   --color-info: rgba(47, 128, 237, 1);
   --color-primary: rgba(92, 41, 5, 1);
   --color-secondary: rgba(224, 187, 228, 1);
-  --color-succes: rgba(39, 174, 96, 1);
+  --color-success: rgba(39, 174, 96, 1);
   --color-warning: rgba(226, 185, 59, 1);
   --color-white: rgba(255, 255, 255, 1);
+
   --dropshadow: 0px 4px 24px 0px rgba(9, 44, 76, 0.4);
-  --gray-3: rgba(130, 130, 130, 1);
-  --heading-h1-font-family: "Inter", Helvetica;
-  --heading-h1-font-size: 56px;
-  --heading-h1-font-style: normal;
-  --heading-h1-font-weight: 700;
-  --heading-h1-letter-spacing: 0px;
+
+  /* ===== Tipografía base ===== */
+  --font-family-base: "Inter", Helvetica;
+  --font-style-base: normal;
+  --letter-spacing-base: 0px;
+
+  /* ===== Headings ===== */
+  --heading-h1-size: 56px;
   --heading-h1-line-height: 61.6px;
-  --heading-h2-font-family: "Inter", Helvetica;
-  --heading-h2-font-size: 48px;
-  --heading-h2-font-style: normal;
-  --heading-h2-font-weight: 700;
-  --heading-h2-letter-spacing: 0px;
+  --heading-h1-weight: 700;
+  --heading-h2-size: 48px;
   --heading-h2-line-height: 52.8px;
-  --heading-h3-font-family: "Inter", Helvetica;
-  --heading-h3-font-size: 40px;
-  --heading-h3-font-style: normal;
-  --heading-h3-font-weight: 700;
-  --heading-h3-letter-spacing: 0px;
+  --heading-h2-weight: 700;
+  --heading-h3-size: 40px;
   --heading-h3-line-height: 44px;
-  --heading-h4-font-family: "Inter", Helvetica;
-  --heading-h4-font-size: 32px;
-  --heading-h4-font-style: normal;
-  --heading-h4-font-weight: 700;
-  --heading-h4-letter-spacing: 0px;
+  --heading-h3-weight: 700;
+  --heading-h4-size: 32px;
   --heading-h4-line-height: 35.2px;
-  --heading-h5-font-family: "Inter", Helvetica;
-  --heading-h5-font-size: 24px;
-  --heading-h5-font-style: normal;
-  --heading-h5-font-weight: 700;
-  --heading-h5-letter-spacing: 0px;
+  --heading-h4-weight: 700;
+  --heading-h5-size: 24px;
   --heading-h5-line-height: 26.4px;
-  --heading-h6-font-family: "Inter", Helvetica;
-  --heading-h6-font-size: 20px;
-  --heading-h6-font-style: normal;
-  --heading-h6-font-weight: 600;
-  --heading-h6-letter-spacing: 0px;
+  --heading-h5-weight: 700;
+  --heading-h6-size: 20px;
   --heading-h6-line-height: 22px;
-  --text-large-bold-font-family: "Inter", Helvetica;
-  --text-large-bold-font-size: 20px;
-  --text-large-bold-font-style: normal;
-  --text-large-bold-font-weight: 700;
-  --text-large-bold-letter-spacing: 0px;
-  --text-large-bold-line-height: 28px;
-  --text-large-font-family: "Inter", Helvetica;
-  --text-large-font-size: 20px;
-  --text-large-font-style: normal;
-  --text-large-font-weight: 400;
-  --text-large-letter-spacing: 0px;
+  --heading-h6-weight: 600;
+
+  /* ===== Textos ===== */
+  --text-large-size: 20px;
   --text-large-line-height: 28px;
-  --text-medium-bold-font-family: "Inter", Helvetica;
-  --text-medium-bold-font-size: 18px;
-  --text-medium-bold-font-style: normal;
-  --text-medium-bold-font-weight: 700;
-  --text-medium-bold-letter-spacing: 0px;
-  --text-medium-bold-line-height: 25.2px;
-  --text-medium-font-family: "Inter", Helvetica;
-  --text-medium-font-size: 18px;
-  --text-medium-font-style: normal;
-  --text-medium-font-weight: 400;
-  --text-medium-letter-spacing: 0px;
+  --text-large-weight: 400;
+  --text-medium-size: 18px;
   --text-medium-line-height: 25.2px;
-  --text-normal-bold-font-family: "Inter", Helvetica;
-  --text-normal-bold-font-size: 16px;
-  --text-normal-bold-font-style: normal;
-  --text-normal-bold-font-weight: 700;
-  --text-normal-bold-letter-spacing: 0px;
-  --text-normal-bold-line-height: 22.4px;
-  --text-normal-font-family: "Inter", Helvetica;
-  --text-normal-font-size: 16px;
-  --text-normal-font-style: normal;
-  --text-normal-font-weight: 400;
-  --text-normal-letter-spacing: 0px;
+  --text-medium-weight: 400;
+  --text-normal-size: 16px;
   --text-normal-line-height: 22.4px;
-  --text-small-bold-font-family: "Inter", Helvetica;
-  --text-small-bold-font-size: 14px;
-  --text-small-bold-font-style: normal;
-  --text-small-bold-font-weight: 700;
-  --text-small-bold-letter-spacing: 0px;
-  --text-small-bold-line-height: 19.6px;
-  --text-small-font-family: "Inter", Helvetica;
-  --text-small-font-size: 14px;
-  --text-small-font-style: normal;
-  --text-small-font-weight: 400;
-  --text-small-letter-spacing: 0px;
+  --text-normal-weight: 400;
+  --text-small-size: 14px;
   --text-small-line-height: 19.6px;
+  --text-small-weight: 400;
+
+  --fw-bold: 700;
+}
+
+/* ===== Clases base ===== */
+.text-base {
+  font-family: var(--font-family-base);
+  font-style: var(--font-style-base);
+  letter-spacing: var(--letter-spacing-base);
+}
+
+/* ===== Headings ===== */
+.heading-h1 {
+  font-family: var(--font-family-base);
+  font-size: var(--heading-h1-size);
+  font-weight: var(--heading-h1-weight);
+  line-height: var(--heading-h1-line-height);
+}
+
+.heading-h2 {
+  font-family: var(--font-family-base);
+  font-size: var(--heading-h2-size);
+  font-weight: var(--heading-h2-weight);
+  line-height: var(--heading-h2-line-height);
+}
+
+.heading-h3 {
+  font-family: var(--font-family-base);
+  font-size: var(--heading-h3-size);
+  font-weight: var(--heading-h3-weight);
+  line-height: var(--heading-h3-line-height);
+}
+
+.heading-h4 {
+  font-family: var(--font-family-base);
+  font-size: var(--heading-h4-size);
+  font-weight: var(--heading-h4-weight);
+  line-height: var(--heading-h4-line-height);
+}
+
+.heading-h5 {
+  font-family: var(--font-family-base);
+  font-size: var(--heading-h5-size);
+  font-weight: var(--heading-h5-weight);
+  line-height: var(--heading-h5-line-height);
+}
+
+.heading-h6 {
+  font-family: var(--font-family-base);
+  font-size: var(--heading-h6-size);
+  font-weight: var(--heading-h6-weight);
+  line-height: var(--heading-h6-line-height);
+}
+
+/* ===== Textos ===== */
+.text-large {
+  font-family: var(--font-family-base);
+  font-size: var(--text-large-size);
+  font-weight: var(--text-large-weight);
+  line-height: var(--text-large-line-height);
+}
+
+.text-large-bold {
+  font-family: var(--font-family-base);
+  font-size: var(--text-large-size);
+  font-weight: var(--fw-bold);
+  line-height: var(--text-large-line-height);
+}
+
+.text-medium {
+  font-family: var(--font-family-base);
+  font-size: var(--text-medium-size);
+  font-weight: var(--text-medium-weight);
+  line-height: var(--text-medium-line-height);
+}
+
+.text-medium-bold {
+  font-family: var(--font-family-base);
+  font-size: var(--text-medium-size);
+  font-weight: var(--fw-bold);
+  line-height: var(--text-medium-line-height);
+}
+
+.text-normal {
+  font-family: var(--font-family-base);
+  font-size: var(--text-normal-size);
+  font-weight: var(--text-normal-weight);
+  line-height: var(--text-normal-line-height);
+}
+
+.text-normal-bold {
+  font-family: var(--font-family-base);
+  font-size: var(--text-normal-size);
+  font-weight: var(--fw-bold);
+  line-height: var(--text-normal-line-height);
+}
+
+.text-small {
+  font-family: var(--font-family-base);
+  font-size: var(--text-small-size);
+  font-weight: var(--text-small-weight);
+  line-height: var(--text-small-line-height);
+}
+
+.text-small-bold {
+  font-family: var(--font-family-base);
+  font-size: var(--text-small-size);
+  font-weight: var(--fw-bold);
+  line-height: var(--text-small-line-height);
 }
