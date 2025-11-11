@@ -14,29 +14,23 @@
 
 function Producto({ nombre, descripcion, imagen }) {
   return (
-    <article className="relative w-[286px] bg-white rounded-xl shadow-lg">
+    <article 
+    tabIndex={0}
+    aria-label="nombre"
+    className="w-[286px] bg-[var(--color-white)] rounded-xl shadow-lg flex flex-col h-full">
       <figure>
         <img
           src={imagen}
           alt={nombre}
           className="w-full h-[170px] object-cover rounded-t-xl"
         />
-
-        {/* Sombra decorativa visual, no accesible */}
-        <div
-          className="absolute w-[90%] h-[50%] top-[52%] left-[5%] bg-gray-300/60 rounded-lg blur-xl"
-          aria-hidden="true"
-          role="presentation"
-        ></div>
-
-        <figcaption className="relative p-4 z-10">
+        <figcaption className="p-4">
           {/* === Título === */}
-          <h2 className="text-base heading-base heading-h2 mb-1">
+          <h3 className="text-base heading-base heading-h3 mb-1">
             {nombre}
-          </h2>
-
+          </h3>
           {/* === Descripción === */}
-          <p className="text-base text-small text-gray-700 leading-tight">
+          <p className="text-base text-small text-[var(--color-grey-2)] leading-tight">
             {descripcion}
           </p>
         </figcaption>

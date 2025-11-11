@@ -1,64 +1,76 @@
+@import "tailwindcss";
 @import "./theme.css";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* ===== Base general ===== */
+.text-base {
+  font-family: var(--font-family-base);
+  font-style: var(--font-style-base);
+  letter-spacing: var(--letter-spacing-base);
+}
 
+/* ===== Headings ===== */
+.heading-base{
+  color: var(--color-primary);
+  font-weight: var(--heading-weight-base);
 
-/* === Componentes personalizados === */
-@layer components {
-  /* ===== Base tipográfica general ===== */
-  .text-base {
-    @apply font-base text-primary tracking-base;
-  }
+}
+.heading-h1 {
+  font-size: var(--heading-h1-size);
+  line-height: var(--heading-h1-line-height);
+}
 
-  /* ===== Headings ===== */
-  .heading-base {
-    @apply text-base font-heading;
-  }
+.heading-h2 {
+  font-size: var(--heading-h2-size);
+  line-height: var(--heading-h2-line-height);
+}
 
-  .heading-h1 {
-    @apply heading-base text-h1;
-  }
+.heading-h3 {
+  font-size: var(--heading-h3-size);
+  line-height: var(--heading-h3-line-height);
+}
 
-  .heading-h2 {
-    @apply heading-base text-h2;
-  }
+.heading-h4 {
+  font-size: var(--heading-h4-size);
+  line-height: var(--heading-h4-line-height);
+}
 
-  .heading-h3 {
-    @apply heading-base text-h3;
-  }
+.heading-h5 {
+  font-size: var(--heading-h5-size);
+  line-height: var(--heading-h5-line-height);
+}
 
-  .heading-h4 {
-    @apply heading-base text-h4;
-  }
+.heading-h6 {
+  font-size: var(--heading-h6-size);
+  line-height: var(--heading-h6-line-height);
+  font-weight: var(--heading-h6-weight);
+}
 
-  .heading-h5 {
-    @apply heading-base text-h5;
-  }
+/* ===== Pesos ===== */
+.text-regular {
+  font-weight: var(--text-weight-base);
+}
 
-  .heading-h6 {
-    @apply heading-base text-h6 font-heading6;
-  }
+.text-bold {
+  font-weight: var(--fw-bold);
+}
 
-  /* ===== Textos ===== */
-  .text-bold {
-    @apply font-bold;
-  }
+/* ===== Textos ===== */
+.text-large {
+  font-size: var(--text-large-size);
+  line-height: var(--text-large-line-height);
+}
 
-  .text-large {
-    @apply text-base text-large;
-  }
+.text-medium {
+  font-size: var(--text-medium-size);
+  line-height: var(--text-medium-line-height);
+}
 
-  .text-medium {
-    @apply text-base text-medium;
-  }
+.text-normal {
+  font-size: var(--text-normal-size);
+  line-height: var(--text-normal-line-height);
+}
 
-  .text-normal {
-    @apply text-base text-normal;
-  }
-
-  .text-small {
-    @apply text-base text-small;
-  }
+.text-small {
+  font-size: var(--text-small-size);
+  line-height: var(--text-small-line-height);
 }

@@ -5,7 +5,14 @@ import Producto from "./Producto";
 
 function App() {
   return (
+    <>
+    <main id="main-content"
+    role="main"
+    tabIndex={-1}
+    >
     <Seccion titulo="Nuestros Productos" elementos={productos} Componente={Producto}/>    
+    </main>
+    </>
   );
 }
 
