@@ -1,7 +1,7 @@
-import Seccion from "./Seccion";
-import "./styles/index.css";
+import Seccion from "./components/Seccion";
+import "./assets/styles/index.css";
 import { productos } from "./data/productos";
-import Producto from "./Producto";
+import Producto from "./components/Card";
 
 function App() {
   return (

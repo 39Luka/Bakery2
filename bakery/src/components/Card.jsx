@@ -1,10 +1,5 @@
-// Este componente usa props explícitas (nombre, descripcion, imagen) en lugar de children
-// porque queremos que Seccion sea totalmente genérica y reutilizable con cualquier tipo de elemento.
-// Así, cada componente solo recibe las props que necesita, evitando problemas si otro componente
-// pasado a Seccion no espera recibir children.
-
 /**
- * Componente Producto que muestra un artículo con imagen, nombre y descripción.
+ * Componente Card que muestra un artículo con imagen, nombre y descripción.
  * 
  * @param {string} nombre - Nombre del producto.
  * @param {string} descripcion - Descripción del producto.
@@ -12,7 +7,7 @@
  * @returns {JSX.Element} Elemento JSX que representa un producto.
  */
 
-function Producto({ nombre, descripcion, imagen }) {
+function Card({ nombre, descripcion, imagen }) {
   return (
     <article 
     tabIndex={0}
@@ -39,4 +34,4 @@ function Producto({ nombre, descripcion, imagen }) {
   );
 }
 
-export default Producto;
+export default Card;
