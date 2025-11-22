@@ -1,21 +1,7 @@
-/**
- * Footer component
- *
- * Componente que muestra el pie de página del sitio.
- * Contiene información básica como copyright.
- * Incluye accesibilidad mediante `aria-label`.
- *
- * @component
- * @returns {JSX.Element} Pie de página renderizado.
- */
 function Footer() {
   return (
-    <footer
-      className="bg-(--color-secondary) text-(--color-primary) py-6 w-full"
-      aria-label="Pie de página"
-    >
+    <footer className="bg-(--color-secondary) text-(--color-primary) py-6 w-full">
       <div className="w-full flex items-center justify-between px-6">
-        
         {/* Copy a la izquierda */}
         <p className="text-base">
           © 2025 Bakery++ — Todos los derechos reservados
