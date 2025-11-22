@@ -1,3 +1,4 @@
+// pages/ProductsPage.jsx
 import Seccion from "../components/Seccion.jsx";
 import { productos } from "../data/productos.js";
 import RenderCards from "../components/RenderCards.jsx";
@@ -5,13 +6,11 @@ import RenderCards from "../components/RenderCards.jsx";
 /**
  * ProductsPage component
  *
- * Componente de la página de productos.
- * - Muestra la sección "Nuestros Productos" con todas las tarjetas de productos.
- * - Utiliza los componentes `Seccion` y `RenderCards`.
- * - Accesibilidad mediante `aria-label` en la lista de productos.
+ * Página con catálogo completo de productos.
+ * - Sección "Nuestros Productos" con todas las tarjetas.
  *
  * @component
- * @returns {JSX.Element} Página con catálogo completo de productos.
+ * @returns {JSX.Element} Página accesible con catálogo de productos.
  */
 function ProductsPage() {
   return (
@@ -20,9 +19,8 @@ function ProductsPage() {
       <Seccion titulo="Nuestros Productos">
         <ul
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-items-stretch items-stretch"
-          aria-label="Catálogo de productos" // Describe la lista de productos para lectores de pantalla
+          aria-label="Catálogo de productos" // Lista accesible
         >
-          {/* Renderiza tarjetas de productos */}
           <RenderCards elementos={productos} />
         </ul>
       </Seccion>

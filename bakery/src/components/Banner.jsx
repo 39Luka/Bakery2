@@ -29,16 +29,9 @@ function Banner({ imagen, titulo, contenido }) {
           alt={titulo} // Texto alternativo para lectores de pantalla
           className="w-full h-full object-cover"
         />
-
-        {/* Gradiente decorativo sobre la imagen */}
-        <div
-          className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/50 to-black/70 rounded-lg"
-          role="presentation" // Indica que es decorativo
-        />
-
+      
         {/* Texto oculto para lectores de pantalla */}
-        <figcaption className="sr-only">
-          {titulo} {contenido}
+        <figcaption className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/50 to-black/70 rounded-lg">
         </figcaption>
 
         {/* Texto visible sobre el banner */}
