@@ -1,7 +1,8 @@
 import Seccion from "../components/Seccion.jsx";
 import { productos } from "../data/productos.js";
 import RenderCards from "../components/RenderCards.jsx";
-
+import { useState, useMemo } from "react";
+import SearchBar from "../components/SearchBar.jsx";
 /**
  * ProductsPage - Página de listado de productos
  * Muestra todos los productos en una cuadrícula responsiva
@@ -30,6 +31,12 @@ function ProductsPage() {
 
   return (
     <>
+      <SearchBar
+        searchTerm={searchTerm}
+        onSearchChange={setSearchTerm}
+        placeholder="Buscar producto por nombre..."
+      />
+
       {/* Seccion: contenedor semántico con h2 de título */}
       <Seccion titulo="Nuestros Productos">
         {/* ul: contenedor grid responsivo con gap consistente
@@ -46,7 +53,7 @@ function ProductsPage() {
           role="list"
         >
           {/* RenderCards: mapea array de productos en items li con tarjetas */}
-          <RenderCards elementos={productos} />
+          <RenderCards elementos={filteredProductos} />
         </ul>
       </Seccion>
     </>
